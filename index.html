@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .display-1 {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        #cronometro {
+            background-color: #6b6b6b;
+            color: #fff;
+            height: 100px;
+            font-size: 3rem;
+            text-align: center;
+            border-radius: 3px;
+        }
+        #btn {
+            margin-top: 25px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-none d-sm-block">
+                    <h1 class="display-1 text-center p-2">Cronômetro</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div id="cronometro" class="col-md-4 text-center p-2">
+                        <span>00</span> :
+                        <span>00</span> :
+                        <span>00</span> :
+                        <span>00</span>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div id="btn" class="col-md-8 text-center">
+                        <button class="btn btn-outline-dark btn-lg">Iniciar</button>
+                        <button class="btn btn-outline-dark btn-lg">Zerar</button>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
