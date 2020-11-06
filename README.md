@@ -10,7 +10,7 @@ conometro é projeto de treinamento de funções do Java Script.
 
 ## Sobre o projeto
 
-<a href="https://allanvigiani.github.io/instagram-cronometro/">Clique aqui</a> para ver o projeto.
+<a href="https://allanvigiani.github.io/cronometro/">Clique aqui</a> para ver o projeto.
 
 	
 ## Tecnologias
