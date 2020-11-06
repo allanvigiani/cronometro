@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronorizador</title>
+    <title>Cronômetro</title>
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -11,12 +11,14 @@
             margin: 0;
             padding: 0;
         }
-
         .display-1 {
             background-color: #000000;
             color: #fff;
             text-align: center;
             margin-bottom: 100px;
+        }
+        .back {
+            float: left;
         }
         #cronometro {
             background-color: #6b6b6b;
@@ -43,7 +45,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 ">
-                    <h1 class="display-1 text-center p-2">Cronorizador</h1>
+                    
+                    <h1 class="display-1 text-center p-2"><a class="back" href="index.html"><img src="img/seta-esquerda.png"></a> Cronômetro</h1>
                 </div>
             </div>
         </div>
@@ -54,14 +57,26 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                        <a class="btn btn-dark btn-lg btn-block" href="cronometro.html">Cronômetro</a>
-                        <a class="btn btn-dark btn-lg btn-block" href="temporizador.html">Temporizador</a>
+                    <div id="cronometro" class="col-md-8 p-2">
+                        <span id="timer_hour">00</span> :
+                        <span id="timer_minute">00</span> :
+                        <span id="timer_second">00</span> :
+                        <span id="timer_tenth_second">00</span>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div id="btn" class="col-md-8 text-center">
+                        <button id="btn_start" class="btn btn-outline-dark btn-lg" onclick="startChronometer()">Iniciar</button>
+                        <button id="btn_stop" class="btn btn-outline-dark btn-lg" onclick="stopChronometer()">Zerar</button>
+                        <button id="btn_pause" class="btn btn-outline-dark btn-lg" onclick="pauseChronometer()">Pausar</button>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
             </div>
         </section>
-    </main>  
+    </main>
+    <script src="scripts/cronometro.js"></script>    
 </body>
 </html>
